@@ -1,3 +1,2 @@
-# Siddique-KC
-
-New changes will be added soon.
+# swiggy_clone_marketplace_capacitor
+swiggy_clone_marketplace_capacitor

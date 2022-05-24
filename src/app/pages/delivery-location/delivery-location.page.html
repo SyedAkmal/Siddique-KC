@@ -1,0 +1,41 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : ionic6clone apps Pack
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()" color="dark">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title mode="md">Add Delivery Location</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+    <div #map id="map" class="map"></div>
+
+  </div>
+
+</ion-content>
+
+<ion-footer>
+ <div class="footer">
+   <ion-label class="text">SELECT DELIVERY LOCATION</ion-label>
+   <div class="location">
+     <ion-label class="title"><ion-icon name="location-outline"></ion-icon> &nbsp; Bagdana </ion-label>
+     <ion-label class="change">CHANGE</ion-label>
+   </div>
+   <ion-label class="text">Bapa sitaram, bagdana, 345432, India</ion-label>
+   <ion-button (click)="goToAddress()" expand="block">
+    CONFIRM LOCATION
+   </ion-button>
+ </div>
+
+</ion-footer>

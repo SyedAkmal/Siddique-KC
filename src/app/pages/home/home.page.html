@@ -1,0 +1,270 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : ionic6clone apps Pack
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="goToOffer()" color="dark">
+        <ion-icon name="pricetags-outline"></ion-icon>
+        &nbsp;Offers
+      </ion-button>
+    </ion-buttons>
+    <div class="header">
+      <div class="tag" (click)="goToAddress()">
+        <ion-icon class="icon" name="location-outline" color="dark"></ion-icon>
+        <ion-label class="title">&nbsp;Bapa Sitaram</ion-label>
+      </div>
+      <ion-label class="location">Bapa Sitaram Asharam, India</ion-label>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+
+    <div class="top_card_div" (click)="goToList()">
+      <ion-label class="card_title">Restaurants</ion-label>
+      <ion-label class="card_text">Enjoy your favourite treats</ion-label>
+      <ion-label class="view_btn">View All&nbsp; <ion-icon name="arrow-forward"></ion-icon>
+      </ion-label>
+      <div class="img" [style.backgroundImage]="'url(assets/img/burger.png)'"></div>
+    </div>
+
+
+    <div class="banner_div" (click)="goToOffer()">
+      <div class="content">
+        <ion-label class="id">GRAB</ion-label>
+        <ion-label class="discount">60% OFF</ion-label>
+        <ion-label class="text">Relish on flavorsome cuisines & delights from top eateries.</ion-label>
+        <ion-label class="view_btn">EXPLORE NOW</ion-label>
+      </div>
+      <div class="food_img">
+        <img src="assets/img/pizza.png" alt="">
+      </div>
+    </div>
+
+    <div class="heading_div">
+      <div class="heading">
+        <div class="title_div">
+          <img src="assets/icon/thumb.png">
+          <ion-label class="title">&nbsp; Top Picks For You</ion-label>
+        </div>
+      </div>
+    </div>
+
+    <div class="top_scroll">
+      <div *ngFor="let item of [1,2,3,4,5,6]">
+        <div class="card" (click)="goToRestaurant()">
+          <div class="img" [style.backgroundImage]="'url(assets/img/3.jpg)'">
+            <div class="img-detail">
+              <ion-label class="discount">50% OFF</ion-label>
+              <ion-label class="discount_type">UPT0 $10</ion-label>
+            </div>
+          </div>
+          <ion-label class="title">The Maggie Adda</ion-label>
+          <ion-label class="time">32 mins</ion-label>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <div class="img" [style.backgroundImage]="'url(assets/img/2.jpg)'">
+          </div>
+          <ion-label class="title"> Adda</ion-label>
+          <ion-label class="time">32 mins</ion-label>
+        </div>
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="heading_div">
+      <div class="heading">
+        <div class="title_div">
+          <ion-label class="title">Popular Brands</ion-label>
+        </div>
+      </div>
+    </div>
+
+    <div class="popular_item">
+      <div *ngFor="let item of [1,2,3,4,5,6]">
+        <div class="card" (click)="goToRestaurant()">
+          <div class="img_detail">
+            <div class="logo" [style.backgroundImage]="'url(assets/icon/food.png)'">
+            </div>
+            <div class="img_discount">
+              <ion-label class="discount">50% OFF</ion-label>
+              <ion-label class="discount_type">UPT0 $10</ion-label>
+            </div>
+          </div>
+          <ion-label class="title">McDonald's</ion-label>
+          <ion-label class="time">32 mins</ion-label>
+        </div>
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="heading_div">
+      <div class="heading">
+        <div class="title_div">
+          <ion-label class="title">Popular Curations</ion-label>
+        </div>
+      </div>
+    </div>
+
+    <div class="food_type" (click)="goToCategory()">
+      <div class="food_detail" *ngFor="let item of [1,2,3,4,5,6]">
+        <div class="food_img" [style.backgroundImage]="'url(assets/img/pizza.png)'"></div>
+        <ion-label class="title">Pizza</ion-label>
+      </div>
+    </div>
+
+
+    <div class="line"></div>
+
+    <div class="heading_div">
+      <div class="heading">
+        <div class="title_div">
+          <img src="assets/icon/thumb.png">
+          <ion-label class="title">&nbsp; In the Spotlight!</ion-label>
+        </div>
+        <div class="all_btn" (click)="goToList()">
+          <ion-label>See All &nbsp;</ion-label>
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </div>
+      </div>
+      <ion-label class="text">Explore sponsored partner brands</ion-label>
+    </div>
+
+    <div class="hotel_item">
+      <div *ngFor="let item of [1,2,3,4,5,6]">
+        <div class="card" (click)="goToRestaurant()">
+          <div class="img" [style.backgroundImage]="'url(assets/img/3.jpg)'">
+            <div class="img_detail">
+              <ion-label class="discount">50% OFF &nbsp;</ion-label>
+              <ion-label class="discount_type">UPT0 $10</ion-label>
+            </div>
+          </div>
+          <ion-label class="title">The Maggie Adda</ion-label>
+          <div class="rate_div">
+            <ion-label class="rate">
+              <ion-icon name="star"></ion-icon>4.1
+            </ion-label>
+            <ion-icon class="ellipse" name="ellipse"></ion-icon>
+            <ion-label class="time">32 mins</ion-label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="heading_div">
+      <div class="heading">
+        <div class="title_div">
+          <ion-label class="title">Today's Featured</ion-label>
+        </div>
+      </div>
+    </div>
+
+    <ion-slides pager="ios" class="banner_slide" [options]="slideOpts">
+      <ion-slide *ngFor="let item of [1,2,3,4]">
+        <div class="banner_div height" (click)="goToOffer()">
+          <div class="content">
+            <ion-label class="id">GRAB</ion-label>
+            <ion-label class="discount">60% OFF</ion-label>
+            <ion-label class="text">Explore an array of treats to burst your cravings</ion-label>
+            <ion-label class="view_btn">TRY NOW</ion-label>
+          </div>
+          <div class="food_img">
+            <img src="assets/img/pizza.png" alt="">
+          </div>
+        </div>
+      </ion-slide>
+    </ion-slides>
+
+
+    <div class="line"></div>
+
+    <div class="heading_div">
+      <div class="heading">
+        <div class="title_div">
+          <img src="assets/icon/thumb.png">
+          <ion-label class="title">&nbsp; Top Offers</ion-label>
+        </div>
+        <div class="all_btn" (click)="goToOffer()">
+          <ion-label>See All &nbsp;</ion-label>
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </div>
+      </div>
+      <ion-label class="text">Explore sponsored partner brands</ion-label>
+    </div>
+
+    <div class="hotel_item">
+      <div *ngFor="let item of [1,2,3,4,5,6]">
+        <div class="card" (click)="goToRestaurant()">
+          <div class="img" [style.backgroundImage]="'url(assets/img/3.jpg)'">
+            <div class="img_detail">
+              <ion-label class="discount">50% OFF &nbsp;</ion-label>
+              <ion-label class="discount_type">UPT0 $10</ion-label>
+            </div>
+          </div>
+          <ion-label class="title">The Maggie Adda</ion-label>
+          <div class="rate_div">
+            <ion-label class="rate">
+              <ion-icon name="star"></ion-icon>4.1
+            </ion-label>
+            <ion-icon class="ellipse" name="ellipse"></ion-icon>
+            <ion-label class="time">32 mins</ion-label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="heading_div">
+      <div class="heading">
+        <div class="title_div">
+          <img src="assets/icon/thumb.png">
+          <ion-label class="title">&nbsp; All Restaurants Nearby</ion-label>
+        </div>
+        <div class="all_btn" (click)="goToList()">
+          <ion-label>See All &nbsp;</ion-label>
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </div>
+      </div>
+      <ion-label>Discover unique tastes near you</ion-label>
+    </div>
+
+    <div class="restaurant_div" *ngFor="let item of [1,2,3,4]" (click)="goToRestaurant()">
+      <div class="img" [style.backgroundImage]="'url(assets/img/3.jpg)'">
+        <div class="img_detail">
+          <ion-label class="discount">100% OFF</ion-label>
+          <ion-label class="discount_type">UPT0 $0</ion-label>
+        </div>
+      </div>
+      <div class="detail">
+        <ion-label class="title">Bagdana Prasad</ion-label>
+        <div class="rate_div">
+          <ion-icon name="star"></ion-icon>
+          <ion-label class="rate">4.1 &#183;</ion-label>
+          <ion-label class="time">0 mins &#183;</ion-label>
+          <ion-label>$26 for two</ion-label>
+        </div>
+        <ion-label class="text">Gujarati, Prasad, laddu, kadhi</ion-label>
+        <ion-label class="text">Bagdana Road</ion-label>
+      </div>
+    </div>
+
+    <ion-button class="main_btn" expand="block" color="primary" (click)="goToList()">
+      see all
+    </ion-button>
+
+  </div>
+</ion-content>

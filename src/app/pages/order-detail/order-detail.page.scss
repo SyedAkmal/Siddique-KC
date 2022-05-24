@@ -1,0 +1,126 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : ionic6clone apps Pack
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+.main_content_div {
+  .location_div {
+    padding: 14px;
+    .location {
+      display: flex;
+      flex-direction: row;
+      .icon {
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        .lines {
+          border-left: 2px dotted lightgray;
+          height: 20px;
+          position: absolute;
+          bottom: 5px;
+          left: 10px;
+        }
+      }
+      .detail {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        .title {
+          font-size: 16px;
+          padding-bottom: 5px;
+          font-family: "medium";
+        }
+        .text {
+          font-size: 14px;
+          padding-bottom: 5px;
+          color: gray;
+        }
+      }
+    }
+  }
+  .delivery_detail {
+    display: flex;
+    align-items: center;
+    padding: 0px 14px;
+    ion-icon {
+      font-size: 24px;
+      padding-right: 20px;
+    }
+    .detail {
+      border-top: 1px solid lightgray;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 0px;
+      width: 100%;
+      .text {
+        font-size: 12px;
+        color: gray;
+      }
+    }
+    .time_tag {
+      font-size: 10px;
+      text-transform: uppercase;
+      color: white;
+      background-color: purple;
+      padding: 2px;
+      position: absolute;
+      right: 14px;
+    }
+  }
+  .bill_detail {
+    padding: 14px;
+    .items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      padding-bottom: 10px;
+      text-transform: capitalize;
+      .detail {
+        display: flex;
+        align-items: center;
+        img {
+          width: 15px;
+          height: 15px;
+          margin-right: 10px;
+        }
+      }
+      .price_total {
+        font-family: "medium";
+      }
+    }
+    .bill_div {
+      border-top: 1px dashed gray;
+      border-bottom: 1px solid lightgray;
+      margin: 10px 0px;
+      padding-top: 10px;
+    }
+  }
+  .chat_thread {
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+    border-bottom: 1px solid lightgray;
+    .title {
+      display: flex;
+      padding-bottom: 5px;
+      ion-label {
+        font-family: "medium";
+        font-size: 16px;
+        margin-right: 20px;
+      }
+    }
+    .text{
+        font-size: 14px;
+        color: gray;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+  }
+}

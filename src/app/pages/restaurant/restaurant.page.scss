@@ -1,0 +1,212 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : ionic6clone apps Pack
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+ion-header {
+  ion-toolbar {
+    ion-title {
+      text-transform: uppercase;
+      font-size: 16px;
+      font-family: "medium";
+    }
+    ion-icon {
+      font-size: 20px;
+    }
+  }
+}
+
+.main_content_div {
+  .rest_head {
+    display: flex;
+    flex-direction: column;
+    margin: 14px;
+    padding-bottom: 14px;
+    .main_title {
+      font-size: 18px;
+    }
+  }
+  .rest_detail {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px dotted lightgray;
+    border-bottom: 1px dotted lightgray;
+    padding: 14px 0px;
+    margin: 0px 14px;
+
+    .content_div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .title {
+        font-size: 14px;
+        font-family: "medium";
+        ion-icon {
+          font-size: 10px;
+        }
+      }
+      .small_text {
+        font-size: 12px;
+      }
+    }
+  }
+  .coupon_scroll {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    margin: 14px;
+    .coupon_div {
+      display: flex;
+      flex-direction: column;
+      text-transform: uppercase;
+      font-size: 12px;
+      border: 1px solid lightgray;
+      border-radius: 10px;
+      padding: 10px;
+      margin-right: 10px;
+      .title {
+        font-size: 12px;
+        font-family: "medium";
+        display: flex;
+        align-items: center;
+        padding-bottom: 3px;
+        width: max-content;
+      }
+      .text {
+        color: gray;
+        letter-spacing: -1px;
+        width: max-content;
+      }
+    }
+  }
+  .veg_tag {
+    display: flex;
+    align-items: center;
+    margin: 14px;
+    border-bottom: 1px solid lightgray;
+    padding: 14px 0px;
+    img {
+      width: 15px;
+      height: 15px;
+    }
+    ion-label {
+      font-size: 14px;
+      font-family: "medium";
+      text-transform: uppercase;
+      padding-left: 10px;
+    }
+  }
+
+  ion-accordion {
+    border-bottom: 10px solid var(--ion-color-light);
+    padding-bottom: 10px;
+    ion-item {
+      font-size: 10px;
+      color: gray;
+      padding-left: 14px;
+      ion-label {
+        font-size: 18px;
+        font-family: "bold";
+        color: black;
+      }
+    }
+  }
+
+  .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 14px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid lightgray;
+    .right {
+      display: flex;
+      flex-direction: column;
+      .veg_img {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 14px;
+        color: var(--ion-color-primary);
+        padding-bottom: 5px;
+        img {
+          width: 15px;
+          height: 15px;
+          margin-right: 10px;
+        }
+      }
+      .title {
+        font-size: 16px;
+        font-family: "medium";
+        padding-bottom: 5px;
+      }
+      .price {
+        font-size: 16px;
+        color: gray;
+      }
+    }
+
+    .img {
+      width: 120px;
+      height: 80px;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      position: relative;
+      border: 1px solid lightgray;
+
+      .img_detail {
+        position: absolute;
+        width: max-content;
+        bottom: -10px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        background-color: white;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 5px 15px var(--box-shadow-color);
+        --box-shadow-color: #f3f3f4;
+
+        .add {
+          display: flex;
+          align-items: center;
+          border: 1px solid lightgray;
+          border-radius: 5px;
+          width: auto;
+          height: 30px;
+          ion-label {
+            font-size: 14px;
+            color: var(--ion-color-success);
+            padding: 0px 15px;
+          }
+          ion-button {
+            --padding-bottom: 0px;
+            --padding-end: 0px;
+            --padding-start: 0px;
+            --padding-top: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+ion-footer {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--ion-color-success);
+    color: white;
+    padding: 14px;
+    ion-label {
+      font-family: "medium";
+    }
+  }
+}

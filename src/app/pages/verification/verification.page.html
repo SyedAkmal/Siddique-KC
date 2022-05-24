@@ -1,0 +1,46 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : ionic6clone apps Pack
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()">
+        <ion-icon name="arrow-back" color="dark"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+    <div class="header">
+      <ion-label class="main_title">Verify details</ion-label>
+      <ion-label class="small_text">OTP sent to 1200120012</ion-label>
+      <div class="img" [style.backgroundImage]="'url(assets/img/mobile.png)'">
+      </div>
+    </div>
+
+    <div class="lower_div">
+
+      <ion-label class="small_text">ENTER OTP</ion-label>
+      <div class="otp">
+        <ng-otp-input [config]="{length:6}"></ng-otp-input>
+      </div>
+
+      <div class="resend">
+        <ion-label  color="danger">Invalid or incorrect OTP</ion-label>
+        <ion-label color="tertiary">RESEND</ion-label>
+      </div>
+
+      <ion-button class="main_btn ion-no-margin" color="primary"  (click)="goToHome()">
+        verify and proceed
+      </ion-button>
+    </div>
+  </div>
+
+</ion-content>

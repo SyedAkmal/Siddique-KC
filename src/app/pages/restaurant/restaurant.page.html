@@ -1,0 +1,121 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : ionic6clone apps Pack
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()" color="dark">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title mode="md">hariram bapa ashram</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="dark">
+        <ion-icon slot="start" name="heart-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button color="dark">
+        <ion-icon slot="end" name="search-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+
+    <div class="rest_head">
+      <ion-label class="main_title">hariram bapa ashram</ion-label>
+      <ion-label class="small_text">Indian</ion-label>
+      <ion-label class="small_text">Hariram Bapa Road | 2.4 kms</ion-label>
+    </div>
+
+    <div class="rest_detail">
+      <div class="content_div">
+        <ion-label class="title">
+          <ion-icon name="star"></ion-icon>
+          4.0
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </ion-label>
+        <ion-label class="small_text">50+ ratings</ion-label>
+      </div>
+      <div class="content_div">
+        <ion-label class="title">26 mins </ion-label>
+        <ion-label class="small_text">Delivery Time</ion-label>
+      </div>
+      <div class="content_div">
+        <ion-label class="title">$343 </ion-label>
+        <ion-label class="small_text">Cost for 2</ion-label>
+      </div>
+    </div>
+
+    <div class="coupon_scroll">
+      <div class="coupon_div" *ngFor="let item of [1,2,3,4]">
+        <ion-label class="title">
+          <ion-icon name="pricetag" color="primary"></ion-icon>
+          &nbsp;Flat 10% off
+        </ion-label>
+        <ion-label class="text">use party | above $300</ion-label>
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="veg_tag">
+      <img src="assets/icon/vegetarian.png" alt="">
+      <ion-label>Pure veg</ion-label>
+    </div>
+
+    <ion-accordion-group>
+      <ion-accordion value="1" *ngFor="let item of [1,2,3]">
+
+        <ion-item slot="header" class="ion-no-padding" lines="none">
+          <ion-label>Recommended (9)</ion-label>
+        </ion-item>
+
+        <ion-list slot="content" *ngFor="let item of [1,2,3]">
+          <div class="items">
+            <div class="right">
+              <div class="veg_img">
+                <img src="assets/icon/vegetarian.png">
+                <ion-icon name="star" color="primary"></ion-icon>
+                <ion-label class="text">Bestseller</ion-label>
+              </div>
+              <ion-label class="title">Pizza Margerita</ion-label>
+              <ion-label class="price">$34</ion-label>
+            </div>
+
+            <div class="img" [style.backgroundImage]="'url(assets/img/6.jpg)'" (click)="modal()">
+              <div class="img_detail">
+                <div class="add">
+                  <ion-button size="small" color="success" fill="clear">
+                    <ion-icon name="remove" color="medium"></ion-icon>
+                  </ion-button>
+                  <ion-label>1</ion-label>
+                  <ion-button size="small" color="success" fill="clear">
+                    <ion-icon name="add"></ion-icon>
+                  </ion-button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ion-list>
+      </ion-accordion>
+    </ion-accordion-group>
+
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="footer" (click)="goToCart()">
+    <ion-label>6 Items &nbsp;|&nbsp; $391</ion-label>
+    <ion-label>VIEW CART &nbsp;<ion-icon name="bag-handle-outline"></ion-icon></ion-label>
+  </div>
+
+</ion-footer>

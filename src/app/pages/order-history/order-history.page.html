@@ -1,0 +1,68 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : ionic6clone apps Pack
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()" color="dark">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title mode="md">Order History</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+    <div class="order_div" *ngFor="let item of [1,2,3]" (click)="goToOrder()">
+      <div class="hotel_name">
+        <div class="name">
+          <ion-label class="title">Ambani Restaurant</ion-label>
+          <ion-label class="text">Delivered &nbsp;<ion-icon name="checkmark-circle" color="success"></ion-icon>
+          </ion-label>
+        </div>
+        <ion-label class="detail">GandhiTaka Road</ion-label>
+        <ion-label class="detail">$345&nbsp;<ion-icon name="chevron-forward-outline"></ion-icon>
+        </ion-label>
+        <div class="dot_line"></div>
+        <ion-label class="detail">Paneer Boil x 1, Gajar Halvo x 2, Rajma rice x 1, Butter pumpkin x 2, pizza x 9
+        </ion-label>
+        <ion-label class="detail">December 12, 5:30 PM</ion-label>
+        <ion-button class="main_btn" (click)="goToCart()" fill="outline">
+          Reorder
+        </ion-button>
+      </div>
+      <div class="rating_div">
+        <div class="rate">
+          <ion-label class="text">Your rating for Delivery</ion-label>
+          <div class="star_div">
+            <ion-label class="star">
+              <ion-icon name="star" color="primary"></ion-icon>&nbsp;1
+            </ion-label>
+            |
+            <ion-label>Very Bad</ion-label>
+          </div>
+        </div>
+        <div class="rate">
+          <ion-label class="text">Your rating for Delivery</ion-label>
+          <div class="star_div">
+            <ion-label class="star">
+              <ion-icon name="star" color="primary"></ion-icon>&nbsp;1
+            </ion-label>
+            |
+            <ion-label>Very Bad</ion-label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ion-label class="view_more">View More Orders</ion-label>
+
+    <div class="line"></div>
+  </div>
+
+</ion-content>

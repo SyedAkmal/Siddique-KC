@@ -1,0 +1,43 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : ionic6clone apps Pack
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()" color="dark">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title mode="md">Favourites</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+    <div class="restaurant_div" *ngFor="let item of [1,2,3,4,5]" (click)="goToRestaurant()">
+      <div class="img" [style.backgroundImage]="'url(assets/img/3.jpg)'">
+        <div class="img_detail">
+          <ion-label class="discount">100% OFF</ion-label>
+          <ion-label class="discount_type">UPT0 $0</ion-label>
+        </div>
+      </div>
+      <div class="detail">
+        <ion-label class="title">Bagdana Prasad</ion-label>
+        <div class="rate_div">
+          <ion-icon name="star"></ion-icon>
+          <ion-label class="rate">4.1 &#183;</ion-label>
+          <ion-label class="time">0 mins &#183;</ion-label>
+          <ion-label>$26 for two</ion-label>
+        </div>
+        <ion-label class="text">Gujarati, Prasad, laddu, kadhi</ion-label>
+        <ion-label class="text">Bagdana Road</ion-label>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

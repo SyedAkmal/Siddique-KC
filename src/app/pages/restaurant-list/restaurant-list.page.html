@@ -1,0 +1,83 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : ionic6clone apps Pack
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-icon (click)="goToBack()" name="arrow-back"></ion-icon>
+        <ion-label (click)="goToAddress()">&nbsp; Rajkot &nbsp;</ion-label>
+        <ion-icon name="chevron-down-outline" (click)="goToAddress()"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="goToOffer()" color="dark">
+        <ion-icon name="pricetags-outline"></ion-icon>
+        &nbsp;Offers
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+
+    <ion-slides class="banner_slide" [options]="slideOpts">
+      <ion-slide *ngFor="let item of [1,2,3,4]">
+        <div class="banner_div height" (click)="goToRestaurant()">
+          <div class="content">
+            <ion-label class="id">GRAB</ion-label>
+            <ion-label class="discount">60% OFF</ion-label>
+            <ion-label class="text">Explore an array of treats to burst your cravings</ion-label>
+            <ion-label class="view_btn">TRY NOW</ion-label>
+          </div>
+          <div class="food_img">
+            <img src="assets/img/pizza.png" alt="">
+          </div>
+        </div>
+      </ion-slide>
+    </ion-slides>
+
+    <div class="food_type">
+      <div class="food_detail" *ngFor="let item of [1,2,3,4,5,6]" (click)="goToOffer()">
+        <div class="food_img">
+          <img src="assets/icon/thumb.png" >
+        </div>
+        <ion-label class="title">Offers Near You</ion-label>
+      </div>
+    </div>
+
+    <div class="filter">
+      <ion-label>All Restaurants</ion-label>
+      <div class="sort" (click)="goToFilter()">
+        <ion-icon name="options"></ion-icon>
+        <ion-label>&nbsp; Sort / Filter</ion-label>
+      </div>
+    </div>
+
+    <div class="restaurant_div" *ngFor="let item of [1,2,3,4,5,6,7]" (click)="goToRestaurant()">
+      <div class="img" [style.backgroundImage]="'url(assets/img/3.jpg)'">
+        <div class="img_detail">
+          <ion-label class="discount">100% OFF</ion-label>
+          <ion-label class="discount_type">UPT0 $0</ion-label>
+        </div>
+      </div>
+      <div class="detail">
+        <ion-label class="title">Bagdana Prasad</ion-label>
+        <div class="rate_div">
+          <ion-icon name="star"></ion-icon>
+          <ion-label class="rate">4.1 &#183;</ion-label>
+          <ion-label class="time">0 mins &#183;</ion-label>
+          <ion-label>$26 for two</ion-label>
+        </div>
+        <ion-label class="text">Gujarati, Prasad, laddu, kadhi</ion-label>
+        <ion-label class="text">Bagdana Road</ion-label>
+      </div>
+    </div>
+
+
+  </div>
+</ion-content>

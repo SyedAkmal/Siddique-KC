@@ -1,0 +1,140 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : ionic6clone apps Pack
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+.main_content_div {
+  .location_div {
+    padding: 14px;
+    .location {
+      display: flex;
+      flex-direction: row;
+      .icon {
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        .lines {
+          border-left: 2px dotted lightgray;
+          height: 20px;
+          position: absolute;
+          bottom: 5px;
+          left: 10px;
+        }
+      }
+      .detail {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        .title {
+          font-size: 16px;
+          padding-bottom: 5px;
+          font-family: "medium";
+        }
+        .text {
+          font-size: 14px;
+          padding-bottom: 5px;
+          color: gray;
+        }
+      }
+    }
+  }
+  .prefer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+    .title {
+      font-size: 18px;
+      padding-left: 20px;
+    }
+    ion-checkbox {
+      position: absolute;
+      right: 15px;
+    }
+  }
+  .add_card {
+    display: flex;
+    flex-direction: row;
+    padding: 14px;
+    .icon {
+      font-size: 24px;
+      border: 1px solid var(--ion-color-primary);
+      color: var(--ion-color-primary);
+      padding: 5px;
+      border-radius: abs($number: 50%);
+    }
+    .detail {
+      display: flex;
+      flex-direction: column;
+      padding-left: 20px;
+      margin-bottom: 10px;
+
+      .title {
+        font-size: 14px;
+        padding-bottom: 5px;
+        font-family: "medium";
+        text-transform: uppercase;
+        color: var(--ion-color-primary);
+      }
+      .text {
+        font-size: 14px;
+        color: gray;
+      }
+      .card_img {
+        display: flex;
+        padding-top: 10px;
+        .img {
+          width: 40px;
+          height: 30px;
+          margin-right: 10px;
+          filter: grayscale(100%);
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+
+  .more_pay {
+    display: flex;
+    flex-direction: row;
+    padding: 14px;
+    position: relative;
+    border-bottom: 1px solid lightgray;
+    .icon {
+      font-size: 24px;
+    }
+    .detail {
+      display: flex;
+      flex-direction: column;
+      padding-left: 20px;
+      margin-bottom: 10px;
+
+      .title {
+        font-size: 14px;
+        padding-bottom: 5px;
+        font-family: "medium";
+        text-transform: uppercase;
+      }
+      .text {
+        font-size: 14px;
+        color: gray;
+      }
+      .chevron {
+        position: absolute;
+        right: 14px;
+        top: 30%;
+      }
+    }
+  }
+}

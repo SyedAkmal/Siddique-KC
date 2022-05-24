@@ -1,0 +1,169 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : ionic6clone apps Pack
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>MY ACCOUNT</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+    <div class="header">
+      <div class="name">
+        <ion-label class="title">John Snowborn</ion-label>
+        <ion-label class="edit" (click)="goToEdit()">EDIT</ion-label>
+      </div>
+      <ion-label class="detail">+91-6254010101 &#183; theadmin@admin.com</ion-label>
+    </div>
+
+
+
+    <ion-accordion-group>
+      <ion-accordion>
+        <ion-item slot="header" class="ion-no-padding" lines="none">
+          <div class="a_header">
+            <ion-label class="title">My Account</ion-label>
+            <ion-label class="text">Addresses, Favourites, Offers & Settings</ion-label>
+          </div>
+        </ion-item>
+
+        <ion-list slot="content">
+          <div class="items" (click)="goToAddress()">
+            <ion-icon class="icon" name="Home-outline"></ion-icon>
+            <ion-label class="title">Manage Address</ion-label>
+            <ion-icon class="chevron" name="chevron-forward-outline"></ion-icon>
+          </div>
+          <div class="items" (click)="goToFavourites()">
+            <ion-icon class="icon" name="heart-outline"></ion-icon>
+            <ion-label class="title">Favourites</ion-label>
+            <ion-icon class="chevron" name="chevron-forward-outline"></ion-icon>
+          </div>
+          <div class="items" (click)="goToOffer()">
+            <ion-icon class="icon" name="pricetag-outline"></ion-icon>
+            <ion-label class="title">Offers</ion-label>
+            <ion-icon class="chevron" name="chevron-forward-outline"></ion-icon>
+          </div>
+          <div class="items" (click)="goToSetting()">
+            <ion-icon class="icon" name="settings-outline"></ion-icon>
+            <ion-label class="title">Settings</ion-label>
+            <ion-icon class="chevron" name="chevron-forward-outline"></ion-icon>
+          </div>
+        </ion-list>
+      </ion-accordion>
+    </ion-accordion-group>
+
+    <ion-accordion-group>
+      <ion-accordion>
+        <ion-item slot="header" class="ion-no-padding" lines="none">
+          <div class="a_header">
+            <ion-label class="title">Payments & Refunds</ion-label>
+            <ion-label class="text">Refund Status & Payment Modes</ion-label>
+          </div>
+        </ion-item>
+
+        <ion-list slot="content">
+          <div class="items" (click)="goToRefund()">
+            <ion-icon class="icon" name="wallet-outline"></ion-icon>
+            <ion-label class="title">Refund Status</ion-label>
+            <ion-icon class="chevron" name="chevron-forward-outline"></ion-icon>
+          </div>
+          <div class="items" (click)="goToPayment()">
+            <ion-icon class="icon" name="card-outline"></ion-icon>
+            <ion-label class="title">Payment Modes</ion-label>
+            <ion-icon class="chevron" name="chevron-forward-outline"></ion-icon>
+          </div>
+        </ion-list>
+      </ion-accordion>
+    </ion-accordion-group>
+
+
+
+    <div class="item_div" (click)="goToOffer()">
+      <ion-label class="title">One Membership</ion-label>
+      <ion-label class="detail">Geu Unlimited Free Delivery & Extra Discounts with Swiggy One. Buy @ 75/month
+      </ion-label>
+      <ion-icon class="chevron" name="chevron-forward-outline"></ion-icon>
+    </div>
+
+    <div class="item_div" (click)="goToPayment()">
+      <ion-label class="title">Swiggy Money</ion-label>
+      <ion-label class="detail">View Account Balance & Transactions History</ion-label>
+      <ion-icon class="chevron" name="chevron-forward-outline"></ion-icon>
+    </div>
+
+    <div class="item_div" (click)="goToHelp()">
+      <ion-label class="title">Help</ion-label>
+      <ion-label class="detail">FAQs & Links</ion-label>
+      <ion-icon class="chevron" name="chevron-forward-outline"></ion-icon>
+    </div>
+
+    <div class="separation">
+      PAST ORDERS
+    </div>
+
+    <div class="order_div" *ngFor="let item of [1,2,3]" (click)="goToOrder()">
+      <div class="hotel_name">
+        <div class="name">
+          <ion-label class="title">Ambani Restaurant</ion-label>
+          <ion-label class="text">Delivered &nbsp;<ion-icon name="checkmark-circle" color="success"></ion-icon>
+          </ion-label>
+        </div>
+        <ion-label class="detail">GandhiTaka Road</ion-label>
+        <ion-label class="detail">$345&nbsp;<ion-icon name="chevron-forward-outline"></ion-icon>
+        </ion-label>
+        <div class="dot_line"></div>
+        <ion-label class="detail">Paneer Boil x 1, Gajar Halvo x 2, Rajma rice x 1, Butter pumpkin x 2, pizza x 9
+        </ion-label>
+        <ion-label class="detail">December 12, 5:30 PM</ion-label>
+        <ion-button class="main_btn" fill="outline">
+          Reorder
+        </ion-button>
+      </div>
+      <div class="rating_div">
+        <div class="rate">
+          <ion-label class="text">Your rating for Delivery</ion-label>
+          <div class="star_div">
+            <ion-label class="star">
+              <ion-icon name="star" color="primary"></ion-icon>&nbsp;1
+            </ion-label>
+            |
+            <ion-label>Very Bad</ion-label>
+          </div>
+        </div>
+        <div class="rate">
+          <ion-label class="text">Your rating for Delivery</ion-label>
+          <div class="star_div">
+            <ion-label class="star">
+              <ion-icon name="star" color="primary"></ion-icon>&nbsp;1
+            </ion-label>
+            |
+            <ion-label>Very Bad</ion-label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ion-label class="view_more">View More Orders</ion-label>
+
+    <div class="line"></div>
+
+    <div class="heading_div">
+      <div class="heading">
+        <div class="title_div">
+          <ion-label class="title">&nbsp; LOGOUT OPTIONS</ion-label>
+        </div>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </div>
+    </div>
+
+    <div class="footer">
+      App version 4.0.0 (2025)
+    </div>
+
+  </div>
+</ion-content>

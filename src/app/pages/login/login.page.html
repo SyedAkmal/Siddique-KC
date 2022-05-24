@@ -1,0 +1,27 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : ionic6clone apps Pack
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+
+<ion-content>
+  <div class="main_content_div">
+    <div class="img" [style.backgroundImage]="'url(assets/img/food.png)'">
+    </div>
+    <div class="lower_div">
+      <ion-label class="main_title">Login</ion-label>
+      <ion-label class="small_text">Enter your phone number to proceed</ion-label>
+      <div class="space"></div>
+      <ion-label class="small_text">10 digit mobile number</ion-label>
+      <ion-input type="text">+91&nbsp;</ion-input>
+      <ion-button class="main_btn ion-no-margin" color="primary"  (click)="goToVerify()">
+      continue
+      </ion-button>
+      <ion-label class="extra_small_text">By clicking, I accept the <span>Terms & Conditions</span> & <span>Privacy Policy</span> </ion-label>
+    </div>
+  </div>
+
+</ion-content>

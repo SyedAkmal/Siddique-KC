@@ -1,0 +1,40 @@
+/*
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : ionic6clone apps Pack
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+*/
+.main_content_div{
+    .img {
+        height: 30vh;
+        width: 100%;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .lower_div{
+          display: flex;
+          flex-direction: column;
+          padding: 14px;
+
+          ion-input{
+              border-bottom: 2px solid var(--ion-color-primary);
+          }
+          .space{
+              margin-bottom: 20px;
+          }
+
+          .extra_small_text {
+            color: var(--ion-color-medium);
+            font-size: 13px;
+            text-align: center;
+            span{
+                color: black;
+                font-family: "medium";
+            }
+          }
+
+      }
+}

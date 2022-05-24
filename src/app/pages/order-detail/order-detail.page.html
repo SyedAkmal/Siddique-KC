@@ -1,0 +1,124 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : ionic6clone apps Pack
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()" color="dark">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title mode="md">Order #9082907520</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="goToHelp()" color="primary">
+        HELP
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+    <div class="location_div">
+      <div class="location">
+        <div class="icon">
+          <ion-icon name="restaurant-outline"></ion-icon>
+          <div class="lines"></div>
+        </div>
+        <div class="detail">
+          <ion-label class="title">Restaurant Name</ion-label>
+          <ion-label class="text">Hill Drive Road</ion-label>
+        </div>
+      </div>
+      <div class="location">
+        <ion-icon class="icon" name="location-outline"></ion-icon>
+        <div class="detail">
+          <ion-label class="title">Home Location</ion-label>
+          <ion-label class="text">Hill Drive Road</ion-label>
+        </div>
+      </div>
+    </div>
+
+    <div class="delivery_detail">
+      <ion-icon name="checkmark" color="success"></ion-icon>
+      <div class="detail">
+        <ion-label class="text">Order deliverd on December 11, 8.43 PM </ion-label>
+        <ion-label class="text">by John Snowborn Yano</ion-label>
+      </div>
+      <ion-label class="time_tag">ON Time</ion-label>
+    </div>
+
+    <div class="separation">
+      Bill Details
+    </div>
+
+    <div class="bill_detail">
+      <div class="items" *ngFor="let item of [1,2]">
+        <div class="detail">
+          <img src="assets/icon/vegetarian.png">
+          <ion-label class="title">Cheese Sandwitch x 1</ion-label>
+        </div>
+        <ion-label>$34</ion-label>
+      </div>
+      <div class="items" *ngFor="let item of [1,2]">
+        <div class="detail">
+          <img src="assets/icon/vegetarian.png">
+          <ion-label class="title">Pizza corn x 8</ion-label>
+        </div>
+        <ion-label>$234</ion-label>
+      </div>
+      <div class="bill_div">
+        <div class="items">
+          <ion-label>Item Total</ion-label>
+          <ion-label>$3.00</ion-label>
+        </div>
+        <div class="items">
+          <ion-label>Order Packing cCharges</ion-label>
+          <ion-label>$3.00</ion-label>
+        </div>
+        <div class="items">
+          <ion-label>delivery partner fee</ion-label>
+          <ion-label>$348.00</ion-label>
+        </div>
+        <div class="items">
+          <ion-label>discount Applined (JD20)</ion-label>
+          <ion-label>$35.67</ion-label>
+        </div>
+        <div class="items">
+          <ion-label>Taxes</ion-label>
+          <ion-label>$34.56</ion-label>
+        </div>
+      </div>
+      <div class="items">
+        <ion-label>paid via cash</ion-label>
+        <ion-label class="price_total"> Bill Total &nbsp;  &nbsp; $234.56</ion-label>
+      </div>
+    </div>
+
+    <div class="separation">
+      All conversation Threads
+    </div>
+
+    <div class="chat_thread">
+      <div class="title">
+        <ion-label>I have payment, refund and bill related queries for this order</ion-label>
+        <ion-icon name="chevron-forward"></ion-icon>
+      </div>
+      <ion-label class="text">Order #9082907520 | January 26, 5:23 PM</ion-label>
+      <ion-label class="text"> <ion-icon name="chatbox-ellipses"></ion-icon> &nbsp; Closed on January 26, 5:44 PM</ion-label>
+    </div>
+
+
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-button (click)="goToCart()" expand="block" fill="clear" shape="round" class="ion-no-margin">
+    REORDER
+  </ion-button>
+</ion-footer>

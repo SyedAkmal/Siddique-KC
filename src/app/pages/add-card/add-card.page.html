@@ -1,0 +1,57 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : ionic6clone apps Pack
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToBack()" color="dark">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title mode="md">Add new card</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="main_content_div">
+    <ion-item class="ion-no-padding">
+      <ion-label position="floating">Card number</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <div class="row">
+      <ion-item class="ion-no-padding">
+        <ion-label position="floating">Valid(MM/YY) </ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item class="ion-no-padding"style="margin-left: 10px;">
+        <ion-label position="floating">CVV</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </div>
+    <ion-item class="ion-no-padding">
+      <ion-label position="floating">Name on card </ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item class="ion-no-padding">
+      <ion-label position="floating">Card nickname </ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-button class="main_btn" (click)="goToBack()" >
+      Proceed To pay
+    </ion-button>
+
+    <div class="card_img">
+      <div class="img" [style.backgroundImage]="'url(assets/icon/paypal.png)'"></div>
+      <div class="img" [style.backgroundImage]="'url(assets/icon/visa.png)'"></div>
+      <div class="img" [style.backgroundImage]="'url(assets/icon/visa.png)'"></div>
+      <div class="img" [style.backgroundImage]="'url(assets/icon/mastercard.png)'"></div>
+    </div>
+
+  </div>
+
+</ion-content>

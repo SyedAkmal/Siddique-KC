@@ -1,0 +1,53 @@
+<!--
+  Authors : initappz (Rahul Jograna)
+  Website : https://initappz.com/
+  App Name : ionic6clone apps Pack
+  This App Template Source code is licensed as per the
+  terms found in the Website https://initappz.com/license
+  Copyright and Good Faith Purchasers © 2021-present initappz.
+ -->
+<ion-header>
+  <ion-toolbar>
+      <ion-searchbar placeholder="Search" showCancelButton="never"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="main_content_div">
+
+    <div class="heading_div">
+      <div class="heading">
+        <div class="title_div">
+          <ion-label class="title">Trending Searches</ion-label>
+        </div>
+      </div>
+    </div>
+
+    <ion-chip  outline color="dark" *ngFor="let item of [1,2,3]">
+      <ion-icon name="trending-up-outline"></ion-icon>
+      <ion-label>Domino's Pizza</ion-label>
+    </ion-chip>
+
+
+    <div class="line"></div>
+
+    <div class="heading_div">
+      <div class="heading">
+        <div class="title_div">
+          <ion-label class="title">Popular Cuisines</ion-label>
+        </div>
+      </div>
+    </div>
+
+    <div class="food_type">
+      <div class="food_detail" *ngFor="let item of [1,2,3,4]">
+        <div class="food_img" [style.backgroundImage]="'url(assets/img/pizza.png)'"></div>
+        <ion-label class="title">Pizza</ion-label>
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+  </div>
+</ion-content>
